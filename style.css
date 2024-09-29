@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    padding: 50px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+ @media(max-width:991px){
+.container{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.info{
+    margin-bottom: 50px;
+}
+}
+/*
+@media(min-width:991px){
+    .container{
+        width: 970px;
+    }
+    }
+    @media(min-width:1200px){
+        .container{
+            width: 1170px;
+        }
+        } */
+    
+       
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+.game{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+margin: auto;
+}
+.tries{
+    width: fit-content;
+}
+.tries div{
+display: flex;
+gap: 10px;
+align-items: center;
+margin-bottom: 30px;
+font-weight: bold;
+flex-wrap: wrap;
+width: fit-content;
+}
+.tries div input{
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    outline: none;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid ;
+    font-size: 2rem;
+    text-transform: capitalize;
+    caret-color: black;
+}
+.control >span{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 4px 1px #00000075;
+    cursor: pointer;
+    user-select: none;
+}
+.control .check{
+    background-color: #e74b1b;
+}
+.control .hint{
+    background-color: #17c484;
+}
+
+
+.info{
+    font-weight: bold;
+  margin-top: 50px;
+}
+.info>p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info li{
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.info li .color{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.info li:nth-child(2) .color{
+    background-color: #ffb700;
+}
+.info li:nth-child(3) .color{
+    background-color: #1ae49b;
+}
+.info li:nth-child(4) .color{
+    background-color: grey;
+}
+.active{
+    border-color: black;
+    color: black;
+}
+.not-active{
+    border-color: grey;
+    color: grey;
+}
+.reload{
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 4px 1px #00000075;
+    cursor: pointer;
+    user-select: none;
+    background-color: #17c484;
+    font-size: 30px;
+    width: fit-content;
+    margin: 10px auto;
+    cursor: pointer;
+    text-align: center;
+}
